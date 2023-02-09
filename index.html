@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Trang Chủ</title>
+</head>
+
+<body>
+    <div class="fb-mes">
+        <a href="https://www.facebook.com/messages/t/102693759360169" class="mes">
+            <img src="/image/Messenger.png" alt="" width="40px"></a>
+
+        <a href="https://www.facebook.com/profile.php?id=100088341017966" class="fb">
+            <img src="/image/fb.png" alt="" width="40px"></a>
+
+    </div>
+    <div id="wrapper">
+        <div class="khung">
+            <a href="/"><img src="image/logo.png" alt="" width="200px" style="padding-left:10px;"></a>
+        <div class="search-sign">
+            <div class="search">
+                <input type="text" style="border:2px solid black" class="inputsearch" placeholder="Nhập Từ Khóa..."> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search searchbar" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+         </svg></div>
+            
+                <div class="signin">
+                    <a href="signin.html"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+         </svg> </a>
+                </div>
+
+
+                <div class="signup">
+                    <a href="signup.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+            <path d="M16 11h6m-3 -3v6"></path>
+         </svg></a>
+
+                </div>
+
+                <div class="menu" onclick="submenu()" style="cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <line x1="4" y1="6" x2="20" y2="6"></line>
+    <line x1="10" y1="12" x2="20" y2="12"></line>
+    <line x1="6" y1="18" x2="20" y2="18"></line>
+ </svg>
+                </div>
+            
+            <div class="close-menu menu" style="display:none;cursor: pointer;" onclick="close_menu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hexagon-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M8.693 4.69l2.336 -1.39a2.056 2.056 0 0 1 2 0l6 3.573h-.029a2 2 0 0 1 1 1.747v6.536c0 .246 -.045 .485 -.13 .707m-2.16 1.847l-4.739 3.027a2 2 0 0 1 -1.942 0l-6 -3.833a2 2 0 0 1 -1.029 -1.747v-6.537a2 2 0 0 1 1.029 -1.748l1.154 -.687"></path>
+    <path d="M3 3l18 18"></path>
+ </svg>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="sub-menu" >
+            <div class="tab-Category">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-north-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 12h18"></path>
+                    <path d="M12 21v-18"></path>
+                    <path d="M7.5 7.5l9 9"></path>
+                    <path d="M7.5 16.5l9 -9"></path>
+                 </svg> <b>Thể Loại</b>
+            </div>
+            <div class="tab-content">
+                <a href="" title="Thể loại Anime">Anime</a>
+                <a href="" title="Thể loại Học đường">Học đường</a>
+                <a href="" title="Thể loại Võ thuật">Võ thuật</a>
+                <a href="" title="Thể loại Hài hước">Hài hước</a>
+                <a href="" title="Thể loại Tình cảm">Tình cảm</a>
+                <a href="" title="Thể loại Harem">Harem</a>
+                <a href="" title="Thể loại Bí ẩn">Bí ẩn</a>
+                <a href="" title="Thể loại Bi kịch">Bi kịch</a>
+                <a href="" title="Thể loại Giả tưởng">Giả tưởng</a>
+                <a href="" title="Thể loại Đời thường">Đời thường</a>
+                <a href="" title="Thể loại Siêu năng lực">Siêu năng lực</a>
+                <a href="" title="Thể loại Kinh dị">Kinh dị</a>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="title-fotter footer1">
+            <img src="image/title.png" alt="" width="150px" height="55px">
+            <br>
+            <b>Phim đề cử</b>
+        </div>
+        <div id="formList">
+            <div id="list" display="none">
+                <div class="item">
+                    <a href=""> <img src="image/banner/tokyoreven.png" class="banner-img"></a>
+
+                </div>
+                <div class="item">
+                    <a href=""> <img src="image/banner/iruma.jpg" class="banner-img"></a>
+
+                </div>
+                <div class="item">
+                    <a href=""> <img src="image/banner/bungou straydogs.jpg" class="banner-img"></a>
+
+                </div>
+                <div class="item">
+                    <a href=""> <img src="image/banner/maou.jpg" class="banner-img"></a>
+
+                </div>
+                <div class="item">
+                    <a href=""> <img src="image/banner/spy kyoushitsu.jpg" class="banner-img"></a>
+
+                </div>
+                <div class="item">
+                    <a href=""> <img src="image/banner/ROUGO NI SONAETE ISEKAI DE 8-MANMAI NO KINKA WO TAMEMASU.jpg" class="banner-img"></a>
+
+                </div>
+
+
+                <button id="prev" onclick="plusSlides(-1)"> < </button>
+                <button id="next" onclick="plusSlides(1)"> > </button>
+            </div>
+
+        </div>
+
+        <div class="title-fotter">
+            <img src="image/title.png" alt="" width="150px" height="55px">
+            <br>
+            <b>Mới cập nhật</b>
+        </div>
+
+
+        <ul class="product">
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>13/13</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="anime/bleach.html" class="product-hinh">
+                            <img src="image/bleach.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="anime/bleach.html" class="product-name">Bleach: Sennen Kessen-hen</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>16/20</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Kage no Jitsuryokusha ni.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Kage no Jitsuryokusha ni Naritakute!</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>115 phút</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/opr.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">One Piece Film: Red</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>27/52</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Đấu Phá Thương Khung Phần 5.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Đấu Phá Thương Khung Phần 5</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>25/25</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/spy.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Spy x Family</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>283/??</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/boruto.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Boruto: Naruto Next Generations</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>24/24</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/tokyoreven.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Tokyo Revengers</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>13/13</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/MaouGakuin.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>99 phút</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/dragonball.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Dragon Ball Super: Super Hero 2022</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>10/??</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Yowamushi Pedal Limit Break.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Yowamushi Pedal: Limit Break</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>14/24</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/blueclock.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Blue Lock</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>49/??</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Digimon Ghost Game.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Digimon Ghost Game</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>12/12</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Mob Psycho 100.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Mob Psycho 100</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+
+                    <div class="episode">
+                        <a href=""> <span>25/25</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Summertime Render.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Summertime Render</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="episode">
+                        <a href=""> <span>89 phút</span></a>
+                    </div>
+                    <div class="product-top">
+                        <a href="" class="product-hinh">
+                            <img src="image/Doraemon Movie 41 Nobita no Little Star Wars.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Doraemon Movie 41: Nobita no Little Star Wars</a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <div class="footer" style="background-color: #242525;margin-top: 20px;width: 980px;  border-radius: 5px;margin-bottom: 10px; display: flex;justify-content: space-between; align-items: center;">
+
+
+                <a href="/"><img src="../image/logo.png" alt="" width="200px" style="padding-left:10px;margin-top: 20px;margin-bottom: 20px;"></a>
+
+                <div class="ftt1">
+                    <p style="color: white;font-weight: 700;">Liên Hệ Quảng Cáo: lehoangthinh503@gmail.com</p>
+                    <p style="color: white;font-weight: 700;">Hotline:0978542296</p>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
