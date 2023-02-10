@@ -1,70 +1,19 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* fallback */
+@font-face {
+  font-family: "Material Icons Round";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsround/v73/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmPq_HTTw.woff2)
+    format("woff2");
+}
+* {
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Roboto", sans-serif;
-   background-color: black;
-   font-weight: 400;
-  font-size: 14px;
-}
-.khung{
-    align-items: center;
-    display: flex;
-    background: #000000;
-}
 
-#wrapper{
-border: 2px solid black;
-height: auto;
-margin:  0px 100px  0px 100px;
-background: #3e3e3e;
-}
-.inputsearch{
-    height: 30px;
-    width: 500px;
-    margin-left: 10px;
-    padding: 10px;
-    position: absolute;
-    background: #3e3e3e;
-    color: white;
-}
-.search .searchbar{
-    
-  padding: 5px;
-height: 30px;
-width:30px ;
-position: relative;
-margin-left: 478px;
-  border: none;
-  cursor: pointer;
-  color: white;
-}
-
-
-.signup a,.signin a{
-color: white;
-}
-.signup,.signin,.menu{
-    margin-left: 10px;
-    background: #3e3e3e;
-    color: white;
-    padding: 4px;
-    padding-bottom: 0px;
-  
-}
-
-
-.tab-Category{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   font-size: 25px;
-   background-color: #9c3737;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
+body {
     -moz-user-select: none !important;
     -webkit-touch-callout: none!important;
     -webkit-user-select: none!important;
@@ -72,29 +21,120 @@ color: white;
     -moz-user-select: none!important;
     -ms-user-select: none!important;
     user-select: none!important;
-    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    font-size: 14px;
+
 }
 
-.sub-menu .tab-content{
-    opacity: 0.6;
-    z-index: 99;
-    display: grid;
-    padding: 0px 10px 10px 10px;
-grid-template-columns: auto auto auto auto;
+.khung {
+    
+    align-items: center;
+   display: flex;
+    background: #000;
+    justify-content: space-between;
 }
-a{
+
+#wrapper {
+    margin: 0 auto;
+    border: 1px solid #3e3e3e;
+    height: auto;
+    background: #3e3e3e;
+    max-width: 1024px;
+}
+
+ .inputsearch {
+    height: 30px;
+    width: 400px;
+   align-content: center;
+   margin: 0px;
+    padding: 10px;
+    position: absolute;
+    background: #3e3e3e;
+    color: white;
+}
+
+.search-sign {
+    display: flex;
+}
+
+.search-sign .search .searchbar {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 370px;
+    margin-right: 10px;
+}
+ .signin {
+    background: #3e3e3e;
+    color: white;
+    padding: 4px;
+    padding-bottom: 0px;
+    height: 30px;
+    width: 30px;
+}
+
+.signup a,
+.signin a {
+    color: white;
+}
+
+.search-sign .signup,
+.search-sign .menu {
+    margin-left: 10px;
+    background: #3e3e3e;
+    color: white;
+    padding: 4px;
+    padding-bottom: 0px;
+    height: 30px;
+    width: 30px;
+}
+.sub-menu{
+    transition-delay: 1s;
+    transition: ease-in;
+    transform: scale(0.5);
+    display: none;
+    position: absolute;
+    z-index: 1599;
+    width: 1022px;
+}
+.tab-Category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background-color: #9c3737;
+   
+    cursor: pointer;
+   
+}
+
+
+.sub-menu .tab-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+a {
     text-decoration: none;
     color: #cac9c9;
 }
-.tab-content a{
+
+.tab-content a {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #141414;
     background: #000000;
-    font-weight: 600;
+    width: 255.5px;
 }
-.tab-content a:hover{
+
+.tab-content a:hover {
     background: #3e3e3e;
 }
 .img-items{
@@ -123,14 +163,12 @@ display: block;
 .title{
     padding:3px 10px;
     background-color: black;
-    width: 1056px;
     color: white;
     border-radius: 5px;
     margin: 10px;
 }
 .listfilm {
     margin: 0px 16px 0px 10px;
-    width: 1056px;
    
       background-color: #242525;
    }
@@ -213,4 +251,144 @@ display: block;
     font-size: 15px;
     background-color: aquamarine;
    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px){
+
+    .inputsearch {
+        display: none;
+    }
+   .icon-tabler-search{
+    margin-left: 150px;
+   }
+   .search-sign .search .searchbar {
+        margin-top: 4px;
+        margin-right: 10px;
+        background: #3e3e3e;
+        color: white;
+        padding: 4px;
+        height: 30px;
+        width: 30px;
+     }
+}
+@media screen and (max-width: 480px){
+   
+    
+    .sub-menu{
+        width: 100%;
+        
+    }
+    .tab-Category{
+        
+        margin-left: 0px;
+    }
+    .tab-content{
+        padding-left: 0px;
+    }
+
+
+  .khung img{
+    width: 200px;
+  }
+ .khung{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+  .search{
+    margin-bottom: 10px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .icon-tabler-search{
+    margin-left: 34px;
+    height: 30px;
+        width: 30px;
+        
+   }
+   .search-sign .search .searchbar{
+    margin: 0px;
+    padding-bottom: 0px;
+    height: 30px;
+    
+   }
+  
+   .footer{
+    width: 100%;
+   }
+   .footer img{
+    width: 200px;
+   }
+  
+  
+   .episode,.fb-mes,#formList,.footer1{
+    display: none;
+   }
+   .ftt1{
+    text-align: center;
+   }
+
+}
+    
+
+
+@media screen and (max-width: 320px) {
+    .sub-menu{
+        width: 100%;
+        
+    }
+    
+    .tab-Category{
+        
+        margin-left: 0px;
+    }
+    .tab-content{
+        padding-left: 0px;
+    }
+
+
+  .khung img{
+    width: 100px;
+  }
+ .khung{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ }
+  .search{
+    margin-bottom: 10px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .icon-tabler-search{
+    margin-left: 34px;
+    height: 30px;
+        width: 30px;
+        
+   }
+   .search-sign .search .searchbar{
+    margin: 0px;
+    padding-bottom: 0px;
+    height: 30px;
+    
+   }
+  
+   .footer{
+    width: 300px;
+   }
+   .footer img{
+    width: 300px;
+   }
+   
+ 
+   .items{
+    width: 100%;
+   }
+   .episode,.ftt1,.fb-mes,#formList,.footer1{
+    display: none;
+   }
+
 }
